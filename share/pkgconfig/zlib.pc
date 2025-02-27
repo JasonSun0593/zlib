@@ -1,0 +1,13 @@
+prefix=D:/Other_proj/install_path/zlib
+exec_prefix=D:/Other_proj/install_path/zlib
+libdir=D:/Other_proj/install_path/zlib/lib
+sharedlibdir=D:/Other_proj/install_path/zlib/lib
+includedir=D:/Other_proj/install_path/zlib/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.3.1
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
