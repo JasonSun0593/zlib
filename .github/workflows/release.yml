@@ -21,6 +21,7 @@ jobs:
         with:
           name: zlib-package
           path: dist/
+      - run: rm -rf dist/package
       - run: cd dist; zip -r ../zlib-package.zip .
       - run:
           gh release upload ${{ github.event.release.tag_name }}
